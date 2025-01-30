@@ -1,14 +1,39 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Happy Animated Coding</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #282c34;
+            color: white;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+        .text {
+            font-size: 3rem;
+            font-weight: bold;
+            animation: glow 1.5s infinite alternate;
+        }
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 5px #ff4da6, 0 0 10px #ff4da6, 0 0 15px #ff4da6;
+            }
+            100% {
+                text-shadow: 0 0 10px #ff99cc, 0 0 20px #ff99cc, 0 0 30px #ff99cc;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1 style="color:purple;">Hello!</h1>
-    <h2>Geoffrey Hendricks</h2>
+    <h2 style="color:purple;">Hello!</h2>
+    <div class="text">Happy Geo!</div>
     <h2>&#128512;</h2>
     <video src="./movie/147099-790883649_small.mp4" width="300" height="300" controls autoplay></video>
-    <br><br>   
-</html> 
+</body>
+</html>
